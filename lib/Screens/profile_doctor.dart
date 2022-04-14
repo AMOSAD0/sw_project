@@ -127,6 +127,74 @@ class Profile_Doctor extends StatelessWidget {
                 ),
             ),
           ),
+          //========================================//
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Container(
+              height: 10.h,
+              width: 90.w,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                 borderRadius: BorderRadius.circular(25),
+                 boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    spreadRadius: 1,
+                    blurRadius: 6,
+                    offset: Offset(3,6)
+                  )
+                ],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  textDirection: TextDirection.rtl,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    
+                    Text('ايام لا تعمل بها :',
+                    textDirection: TextDirection.rtl,
+                    style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 19,
+                          fontWeight: FontWeight.bold,
+                        ),      
+                  ),
+
+
+                  Text('السبت - الثلاثاء',
+                    textDirection: TextDirection.rtl,
+                    style: TextStyle(
+                          color: Colors.grey,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),      
+                  ),
+                  ],
+                ),
+              ),
+              
+            ),
+          ),
+          //===================================================//
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              height: 7.h,
+              width: 90.w,
+              color: Colors.blue,
+              child: Center(
+                child: Text('حفظ',
+                      textDirection: TextDirection.rtl,
+                      style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 23,
+                            fontWeight: FontWeight.bold,
+                          ),      
+                    ),
+              ),
+            ),
+          ),
         ],
       ),
       
