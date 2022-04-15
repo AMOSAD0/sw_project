@@ -25,6 +25,7 @@ class Cont extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
+                    //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     textDirection: TextDirection.rtl,
                     children: [
                       CircleAvatar(
@@ -80,10 +81,35 @@ class Cont extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                                      ),
                                     ),
+
+                                    
                                       ],
                                     )
                         ],
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 80),
+                        child: Container(
+                          
+                                        height: 4.h,
+                                        width: 16.w,
+                                        
+                                        decoration: BoxDecoration(
+                                          color: Colors.green[300],
+                                          borderRadius: BorderRadius.circular(20)
+                                        ),
+                                        child: Center(
+                                          child: Text('تم الكشف',
+                             textDirection: TextDirection.rtl,
+                                style: TextStyle(
+                             color: Colors.white,
+                                   fontSize: 11,
+                            fontWeight: FontWeight.bold,
+                                     ),
+                                    ),
+                                        ),
+                                      ),
+                      ),
                     ],
                   ),
                 ),
