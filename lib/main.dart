@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sw_project/Screens/home.dart';
 import 'package:sw_project/Screens/profile_doctor.dart';
 import 'package:sizer/sizer.dart';
 import 'package:sw_project/Screens/screen1.dart';
@@ -15,7 +16,7 @@ class SW extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, deviceType) {
         return MaterialApp(
-          home: Screen1(),
+          home: Home(),
         );
       }
  );
